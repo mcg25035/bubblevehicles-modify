@@ -7,8 +7,8 @@ execute as @e[type=minecraft:llama, tag=buvs.seat, tag=!-buvs.passenger] if scor
 tag @s add btemp.controller
 tag @p add btemp.driver
 
-
 execute at @s run function bubblevehicles:vehicles/abstracts/controller/display
+execute at @s run function bubblevehicles:vehicles/abstracts/controller/display_speed
 function bubblevehicles:vehicles/abstracts/controller/defaults
 clear @p #bubblevehicles:vehicle_action/all{BubbleVehicles:1b}
 

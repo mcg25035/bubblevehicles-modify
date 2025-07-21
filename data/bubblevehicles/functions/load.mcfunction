@@ -11,7 +11,6 @@ scoreboard objectives add bvehicle.vectorZ dummy "BVehicle Vector Y"
 scoreboard objectives add bvehicle.vectorA dummy "BVehicle Vector A"
 scoreboard objectives add buvsInput.angle dummy
 scoreboard objectives add buvsInput.value dummy
-
 scoreboard objectives add buvs.max_speed dummy "Vehicle Max Speed"
 scoreboard objectives add buvs.min_speed dummy "Vehicle Min Speed"
 scoreboard objectives add buvs.accelerate0 dummy "Vehicle Gear -1 Acceleration"
@@ -100,11 +99,18 @@ scoreboard players set 3 buvs.const 3
 scoreboard players set 4 buvs.const 4
 scoreboard players set 6 buvs.const 6
 scoreboard players set 7 buvs.const 7
+scoreboard players set 10 buvs.const 10
+scoreboard players set &ten buvs.const 10
 scoreboard players set 20 buvs.const 20
 scoreboard players set 32 buvs.const 32
 scoreboard players set 100 buvs.const 100
+scoreboard players set &hundred buvs.const 800
 scoreboard players set 400 buvs.const 400
+scoreboard players set 800 buvs.const 800
+scoreboard players set &eightHundred buvs.const 800
 scoreboard players set 1000 buvs.const 1000
+scoreboard players set 1200 buvs.const 1200
+scoreboard players set &twelveK buvs.const 1200
 scoreboard players set $RotationSpeedThreshold buvs.const 1000
 scoreboard players set $RotationSpeedThresholdMinus1 buvs.const 999
 scoreboard players set $RotationTickInterval buvs.const 3

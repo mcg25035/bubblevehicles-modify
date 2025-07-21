@@ -1,10 +1,11 @@
 # Tick counter for rotation update
 scoreboard players add $TickCounter bubblevehicles 1
-execute if score $TickCounter bubblevehicles matches $RotationTickInterval buvs.const run scoreboard players set $TickCounter bubblevehicles 0
+execute if score $TickCounter bubblevehicles matches 3 run scoreboard players set $TickCounter bubblevehicles 0
 
 # Conditional Steering
-execute if score @s bvehicle.speed matches ..999 buvs.const run function bubblevehicles:vehicles/abstracts/controller/steering
-execute if score @s bvehicle.speed matches 1000 buvs.const.. if score $TickCounter bubblevehicles matches 0 run execute as @s at @s run data modify entity @s Rotation[0] set from entity @p Rotation[0]
+execute if score @s bvehicle.speed matches ..1200 run function bubblevehicles:vehicles/abstracts/controller/steering
+execute if score @s bvehicle.speed matches 800.. if score $TickCounter bubblevehicles matches 0 run execute as @s at @s run data modify entity @s Rotation[0] set from entity @p Rotation[0]
+
 execute unless score @s bvehicle.speed matches 0 run function bubblevehicles:vehicles/abstracts/controller/engine/simple_ground/moving
 function bubblevehicles:vehicles/abstracts/controller/engine/simple_ground/braking
 function bubblevehicles:vehicles/abstracts/controller/engine/simple_ground/ground_gravity
